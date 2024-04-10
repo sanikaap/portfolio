@@ -18,17 +18,7 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
-.cert{
-  color: whitesmoke;
-  background-image: linear-gradient(red , orange);
-  border: 1px;
-  border-radius: 5px;
-  padding: 7px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-  font-weight: 600;
 
-}
 
 /* TRANSITION */
 
