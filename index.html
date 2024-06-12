@@ -1,488 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Webportfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <!----Font awesome cdn  font icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Sanika Patil</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Sanika Patil</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Sanika Patil</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sanika-patil-8623a5223/recent-activity/all/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/sanikaap'"
-          />
-          <img
-            src="./assets/icons8-codechef-50.png"
-            alt="My Codechef profile"
-            class="icon"
-            onclick="location.href='https://www.codechef.com/dashboard'"
-          />
-          <img
-            src="./assets/icons8-level-up-your-coding-skills-and-quickly-land-a-job-24.png"
-            alt="My Leetcode profile"
-            class="icon"
-            onclick="location.href='https://leetcode.com/Sanikaaa__/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/3184.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Fresher <br />Full Stack Developmentt</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Tech - Computer Science & Engineering<br /></p>
-            </div>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-s"></i>
+            <div class="logo-text">Sanika Patil</div>
           </div>
-          <div class="text-container">
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="#">Home</a></li>
+              <li><a href="#projects-section">Project</a></li>
+              <li><a href="#skills-section">Skills</a></li>
+              <li><a href="#experience-section">Experience</a></li>
+              <li>
+                <a href="https://www.codechef.com" target="_blank">
+                  <img src="assets/icons8-codechef-50.png" alt="CodeChef" class="nav-icon" />
+                </a>
+              </li>
+              <li>
+                <a href="https://leetcode.com" target="_blank">
+                  <img src="assets/icons8-level-up-your-coding-skills-and-quickly-land-a-job-24.png" alt="LeetCode" class="nav-icon" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="assets/Designer.png" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm <span class="input">FullStack Developer</span></h5>
+            <h1>Sanika Patil</h1>
             <p>
-              Strong in design and integration with intuitive problem-solving skills.
-Passionate about learning new things and implementing projects.
+              Strong In Design and Integration with intuitive problem solving skills. Passionate about learning new things and implememnting projects.
             </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Full Stack Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TAILWIND CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Next JS</h3>
-                  <p>Intermediate</p>
-                </div>
-                
 
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-                
+            <div class="btn-group">
+              <a href="#" class="btn active">Download CV</a>
+              <a href="mailto:2611sanika@gmail.com" class="btn">Contact</a>
+            </div>
 
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MERN Stack</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
+            <div class="social">
+              <a href="https://github.com/sanikaap"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/sanika-patil-8623a5223"><i class="fa-brands fa-linkedin"></i></a>
               
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Fundamentals</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Machine learning</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Generative AI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data Structure & Algorithm</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DevOps</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git & GitHub</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitLab & Bitbucket</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Linux</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-            </div>
-          </div>
-           
-            
-          <br>
         </div>
       </div>
-      <br><br>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <br>
-    <br>
+    </div>
 
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Twitter Clone Using Next.js (3).png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Twitter Clone</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/sanikaap/twitter-clone'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://twitter-clone-beryl-nine.vercel.app/'"
-              >
-                Live
-              </button>
+    <div id="projects-section" class="projects-section">
+      <div class="wrapper">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="card">
+            <img src="assets/Twitter Clone Using Next.js (1) (1).png" alt="Project 1" />
+            <div class="card-content">
+              <h3>Sorting Algorithm Visualizer</h3>
+              <button onclick="window.open('https://github.com/sanikaap', '_blank')">GitHub</button>
+              <button onclick="window.open('https://liveproject1.com', '_blank')">Live</button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Twitter Clone Using Next.js (2) (1).png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">AI Based Application</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/sanikaap/sumz'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://sumz-2v5ut5d2c-2611sanika-gmailcom.vercel.app/'"
-              >
-                Live
-              </button>
+          <div class="card">
+            <img src="assets/Twitter Clone Using Next.js (2) (1).png" alt="Project 2" />
+            <div class="card-content">
+              <h3>AI Application</h3>
+              <button onclick="window.open('https://github.com/sanikaap', '_blank')">GitHub</button>
+              <button onclick="window.open('https://liveproject2.com', '_blank')">Live</button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Twitter Clone Using Next.js (1) (1).png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Sorting Algorithm Visulizer</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/sanikaap/sorting'"
-              >
-                Github
-              </button>
-             
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://sanikaap.github.io/sorting/'"
-              >
-                Live
-              </button>
+          <div class="card">
+            <img src="assets/Twitter Clone Using Next.js (3).png" alt="Project 3" />
+            <div class="card-content">
+              <h3>Twitter Clone</h3>
+              <button onclick="window.open('https://github.com/sanikaap', '_blank')">GitHub</button>
+              <button onclick="window.open('https://liveproject3.com', '_blank')">Live</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:2611sanika@gmail.com">2611sanika@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/sanika-patil-8623a5223/recent-activity/all/">LinkedIn</a></p>
-        </div>
+    <!-- Skills Section -->
+<section id="skills-section" class="skills-section">
+  <div class="wrapper">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+          
+        <span>HTML5</span>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 Sanika Patil. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+      <div class="skill-card">
+       
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+          
+        <span>CSS3</span>
+      </div>
+      <div class="skill-card">
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-card">
+       
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+          
+        <span>Tailwind CSS</span>
+      </div>
+      <div class="skill-card">
+       
+      
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+          
+          
+        <span>Next JS</span>
+      </div>
+      <div class="skill-card">
+       
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+          
+          
+        <span>Java</span>
+      </div>
+      <div class="skill-card">
+       
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+          
+          
+        <span>Python</span>
+      </div>
+      <div class="skill-card">
+       
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+          
+          
+        <span>Mongo DB</span>
+      </div>
+
+      <div class="skill-card">
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+          
+        <span > C++</span>
+      </div>
+      <div class="skill-card">
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+          
+        <span >React </span>
+      </div>
+      <div class="skill-card">
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+          
+        <span > Node</span>
+      </div>
+      <div class="skill-card">
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+          
+        <span >Express</span>
+      </div>
+      <div class="skill-card">
+        
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+          
+        <span>Git</span>
+      </div>
+      <!-- Add more skill cards as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience-section" class="experience-section">
+  <div class="wrapper">
+    <h2>Experience</h2>
+    <div class="experience-container">
+      <div class="experience-card">
+        <h3>ISAN DATA SYSTEMS PVT LTD</h3>
+        <h4>Data Science Intern</h4>
+        <p>Duration: Jan 2024 - April 2024</p>
+        <p>
+          Developed a gradebook system using Python’s Pandas library,
+          streamlining data management and analysis processes for academic records.
+          Utilized Pandas to efficiently handle large datasets,ensuring accurate representation of student grades and performance metrics.
+        </p>
+      </div>
+      <div class="experience-card">
+        <h3>1STOP.AI</h3>
+        <h4>Machine Learning Intern</h4>
+        <p>Duration: Aug 2022 - Oct 2022</p>
+        <p>
+          Built a sentiment analysis model using a variety of NLP tech
+          niques, including text classification,tokenization,and lemmatzation.
+          Developedahigh-accuracyNLPsystemtoextractfeaturesfrom
+           restaurant reviews,achieving over 90 % held-outtestset
+        
+        </p>
+      </div>
+      <!-- Add more experience cards as needed -->
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fa-solid fa-s"></i>
+        <span>Sanika Patil</span>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#skills-section">Skills</a></li>
+          <li><a href="#experience-section">Experience</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/sanikaap"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sanika-patil-8623a5223"><i class="fa-brands fa-linkedin"></i></a>
+       
+      </div>
+      <div class="footer-contact">
+
+        <p>&copy; 2024 Sanika Patil. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Frontend Developer", "AI & ML", "Web Developer"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true,
+      });
+    </script>
+     
+    </script>
   </body>
 </html>
