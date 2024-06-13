@@ -12,6 +12,7 @@ html {
 body {
   overflow-x: hidden;
 }
+
 .hero-header {
   width: 100%;
   height: 100%;
@@ -146,6 +147,17 @@ nav .navlinks li a:hover {
 }
 .btn.active {
   border-color: #ff5f00;
+}
+.btn:hover {
+  background-color: #e5180d;
+  transform: scale(1.05);
+  border: 2px solid yellow;
+  color: whitesmoke;
+}
+.btn {
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
 }
 .hero-text .social i {
   color: #eb001b;
